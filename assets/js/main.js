@@ -64,3 +64,18 @@
 	});
 
 })(jQuery);
+
+
+// Adding new item to list
+
+// function addItem() {
+// 	var table = document.getElementById("items").getElementsByTagName('tbody')[0];
+// 	var amount = document.getElementById("amount")
+// 	var row = table.insertRow(0);
+// 	var cell1 = row.insertCell(0);
+// 	var cell2 = row.insertCell(1);
+// 	cell1.innerHTML = "$" + amount.value;
+// 	cell2.innerHTML = "NEW CELL2"	;
+//   }
+  
+  
