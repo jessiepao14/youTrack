@@ -8,13 +8,13 @@ var con = mysql.createConnection({
 });
 
 con.connect(function(err) {
-   if (err) throw err;
-   console.log("Connected!");
-   con.query("CREATE DATABASE testing", function (err, result) {
-     if (err) throw err;
-     console.log("Database created");
-   });
- });
+  if (err) throw err;
+  console.log("Connected!");
+  con.query("CREATE DATABASE testing", function (err, result) {
+    if (err) throw err;
+    console.log("Database created");
+  });
+});
 
 // con.connect(function(err) {
 //     if (err) throw err;
