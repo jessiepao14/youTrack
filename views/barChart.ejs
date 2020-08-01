@@ -34,16 +34,7 @@
                                     <a href="/logout">Sign Out</a>
                                 </div>
                             </a>
-                        </li>     
-                        
-                        <!-- <li id="dropdown">
-                            <i id="dropbtn" class="fas fa-user">
-                                <div class="dropdown-content">
-                                    <a href="#">View Profile</a>
-                                    <a href="#">Sign Out</a>
-                                </div>
-                            </i>
-                        </li>  profile -->
+                        </li>     <!-- Log out -->
                         <li><a href="#"><i class="fas fa-home"></i></a></li>  <!-- home -->
                     </ul>
                 </div>
@@ -92,18 +83,26 @@
                         let piechart = new Chart(mychart, {
                             type: 'bar',
                             data: {
-                            labels: <%- JSON.stringify(month); %>,
-                            datasets: [{
-                                label: "Total Spending ($) of the month",
-                                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850", "#FAEBD7", "#7FFFD4","#7FFF00","#A9A9A9","#FF8C00"],
-                                data: <%- JSON.stringify(data); %>
-                            }]
+                                labels: <%- JSON.stringify(month); %>,
+                                datasets: [{
+                                    label: "Total Spending ($) of the month",
+                                    backgroundColor: ['blue', 'blue','blue', 'blue','blue', 'blue','blue', 'blue','blue', 'blue','blue', 'blue', 'blue'],
+                                    data: <%- JSON.stringify(data); %>
+                                }]
                             },
                             options: {
-                            title: {
-                                display: true,
-                                text: "Total Spending ($) of the Year"
-                            }
+                                scales: {
+                                    yAxes: [{
+                                            display: true,
+                                            ticks: {
+                                                beginAtZero: true,
+                                            }
+                                        }]
+                                },
+                                title: {
+                                    display: true,
+                                    text: "Total Spending ($) of the Year"
+                                }
                             }
                         });
                     </script>

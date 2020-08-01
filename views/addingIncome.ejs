@@ -26,7 +26,14 @@
                 <div class="top_menu">
                     <div class="logo">Budgetting</div>
                     <ul class="sidebar-list">
-                        <li><a href="#"><i class="fas fa-user"></i></i></a></li>     <!-- profile -->
+                        <li id="dropdown">
+                            <a><i class="fas fa-user"></i>
+                                <div id="dropdown-content">
+                                    <a href="#">View Profile</a>
+                                    <a href="/logout">Sign Out</a>
+                                </div>
+                            </a>
+                        </li>        <!-- Log out -->
                         <li><a href="/home"><i class="fas fa-home"></i></a></li>  <!-- home -->
                     </ul>
                 </div>
